@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "60584f0a2f136689101f";
+/******/ 	var hotCurrentHash = "c5c4305e222ccc8775bf";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1036,7 +1036,7 @@ exports.push([module.i, "header {\r\n    background-color: #ff8a65;\r\n    paddi
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".userList {\r\n    border: 2px solid #bdbdbd;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-right: 30px;\r\n    overflow-y: scroll;\r\n}\r\n\r\n.userList > div {\r\n    border: 2px dashed #ffeeba; \r\n    margin-bottom: 5px;\r\n    padding: 5px;\r\n    border-radius: 7px;\r\n    margin-right: 7px;\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n    body {\r\n      background-color: lightblue;\r\n    }\r\n  }", ""]);
+exports.push([module.i, ".userList {\r\n    border: 2px solid #bdbdbd;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-right: 30px;\r\n    overflow-y: scroll;\r\n    min-width: 20%;\r\n}\r\n\r\n.userList > div {\r\n    border: 2px dashed #ffeeba; \r\n    margin-bottom: 5px;\r\n    padding: 5px;\r\n    border-radius: 7px;\r\n    margin-right: 7px;\r\n}\r\n\r\n.user-list-items {\r\n    color: #721c24;\r\n    background-color: #fff3cd;\r\n}\r\n\r\n#listSsection {\r\n    min-height: 380px;\r\n}", ""]);
 
 
 
@@ -1051,7 +1051,7 @@ exports.push([module.i, ".userList {\r\n    border: 2px solid #bdbdbd;\r\n    pa
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#user-table {\r\n    border: 2px solid #bdbdbd; \r\n    /* flex: 3;    */\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n}\r\n\r\ntable {\r\n    border-collapse: separate;\r\n    border-spacing: 17px 17px;\r\n}\r\n  \r\ntd {\r\n    border: 2px dashed #bdbdbd;\r\n    min-width: 13em;\r\n    margin-right: 5px;\r\n    padding: 5px;\r\n    height: 50px;\r\n    color: #856404;\r\n    background-color: #fff3cd;\r\n    border-color: #ffeeba;\r\n    border-radius: 7px;\r\n}", ""]);
+exports.push([module.i, "#user-table {\r\n    border: 2px solid #bdbdbd; \r\n    /* flex: 3;    */\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n}\r\n\r\ntable {\r\n    border-collapse: separate;\r\n    border-spacing: 17px 17px;\r\n}\r\n  \r\ntd {\r\n    border: 2px dashed #bdbdbd;\r\n    min-width: 13em;\r\n    margin-right: 5px;\r\n    padding: 5px;\r\n    height: 50px;\r\n    color: #856404;\r\n    background-color: #fff3cd;\r\n    border-color: #ffeeba;\r\n    border-radius: 7px;\r\n}\r\n\r\n.cancel-btn {\r\n    float: right;\r\n    cursor: pointer;\r\n    color: #fff;\r\n    background-color: #dc3545;\r\n    border-color: #dc3545;\r\n    font-weight: 400;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n    border-radius: .25rem;\r\n}", ""]);
 
 
 
@@ -26440,15 +26440,45 @@ var Userlist_1 = __webpack_require__(/*! ../Userlist/Userlist */ "./src/app/comp
 var Users_1 = __webpack_require__(/*! ../Users/Users */ "./src/app/components/Users/Users.tsx");
 var Container = (function (_super) {
     __extends(Container, _super);
-    function Container() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Container(props) {
+        var _this = _super.call(this, props) || this;
+        _this.passedFunction = function () {
+            alert("in passedFunction");
+        };
+        _this.state = {
+            userList: [
+                { "id": 1, "first_name": "Theodora", "last_name": "Baylis" },
+                { "id": 2, "first_name": "Aubert", "last_name": "Borthe" },
+                { "id": 3, "first_name": "Philis", "last_name": "Dunkinson" },
+                { "id": 4, "first_name": "Mella", "last_name": "Godly" },
+                { "id": 5, "first_name": "Lucretia", "last_name": "Goldston" },
+                { "id": 6, "first_name": "Malena", "last_name": "Davidoff" },
+                { "id": 7, "first_name": "Faye", "last_name": "Sante" },
+                { "id": 8, "first_name": "Merridie", "last_name": "Glynn" },
+                { "id": 9, "first_name": "Desiree", "last_name": "Waber" },
+                { "id": 10, "first_name": "Camey", "last_name": "Winpenny" },
+                { "id": 11, "first_name": "Penrod", "last_name": "Crowd" },
+                { "id": 12, "first_name": "Claudette", "last_name": "Dimanche" },
+                { "id": 13, "first_name": "Vincenz", "last_name": "Leftley" },
+                { "id": 14, "first_name": "Pooh", "last_name": "Myton" },
+                { "id": 15, "first_name": "Gwynne", "last_name": "Fernandes" },
+                { "id": 16, "first_name": "Rabi", "last_name": "Parlott" },
+                { "id": 17, "first_name": "Riley", "last_name": "Cudd" },
+                { "id": 18, "first_name": "Allyn", "last_name": "Mammatt" },
+                { "id": 19, "first_name": "Regan", "last_name": "Beurich" },
+                { "id": 20, "first_name": "Hedvige", "last_name": "Bysaker" }
+            ],
+            tempUserList: []
+        };
+        return _this;
     }
     Container.prototype.render = function () {
+        var _this = this;
         return (React.createElement("div", null,
             React.createElement(Header_1.Header, null),
             React.createElement("div", { className: 'rowC' },
-                React.createElement(Userlist_1.Userlist, null),
-                React.createElement(Users_1.Users, null))));
+                React.createElement(Userlist_1.Userlist, { userList: this.state.userList }),
+                React.createElement(Users_1.Users, { userList: this.state.userList, passedFunction: function () { return _this.passedFunction(); } }))));
     };
     return Container;
 }(React.Component));
@@ -26649,37 +26679,21 @@ var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/
 __webpack_require__(/*! ./Userlist.css */ "./src/app/components/Userlist/Userlist.css");
 var Userlist = (function (_super) {
     __extends(Userlist, _super);
-    function Userlist(props) {
-        var _this = _super.call(this, props) || this;
-        _this.state = {
-            userList: [
-                { "id": 1, "first_name": "Theodora", "last_name": "Baylis" },
-                { "id": 2, "first_name": "Aubert", "last_name": "Borthe" },
-                { "id": 3, "first_name": "Philis", "last_name": "Dunkinson" },
-                { "id": 4, "first_name": "Mella", "last_name": "Godly" },
-                { "id": 5, "first_name": "Lucretia", "last_name": "Goldston" },
-                { "id": 6, "first_name": "Malena", "last_name": "Davidoff" },
-                { "id": 7, "first_name": "Faye", "last_name": "Sante" },
-                { "id": 8, "first_name": "Merridie", "last_name": "Glynn" },
-                { "id": 9, "first_name": "Desiree", "last_name": "Waber" },
-                { "id": 10, "first_name": "Camey", "last_name": "Winpenny" }
-            ],
+    function Userlist() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.handleDrag = function (ev, name) {
+            ev.dataTransfer.setData("text", ev.target.id);
         };
         return _this;
     }
     Userlist.prototype.render = function () {
-        function handleDrag(ev) {
-            console.log(ev.target);
-            var id = ev.target.id;
-            ev.dataTransfer.setData("text/plain", id);
-        }
-        var list = (this.state.userList).map(function (item, index) {
-            return (React.createElement("div", { key: item.id, draggable: true, onDragStart: handleDrag },
-                item.first_name,
-                " ",
-                item.last_name));
+        var _this = this;
+        var userList = this.props.userList;
+        var list = (userList).map(function (item, index) {
+            var name = item.first_name + " " + item.last_name;
+            return (React.createElement("div", { key: item.id, className: "user-list-items", id: "dragTarget_" + item.id, draggable: true, onDragStart: function (e) { return _this.handleDrag(e, item.first_name + " " + item.last_name); } }, item.first_name + " " + item.last_name));
         });
-        return (React.createElement("div", { className: "userList" }, list));
+        return (React.createElement("div", { id: "listSsection", className: "userList" }, list));
     };
     return Userlist;
 }(React.Component));
@@ -26778,22 +26792,50 @@ __webpack_require__(/*! ./Users.css */ "./src/app/components/Users/Users.css");
 var Users = (function (_super) {
     __extends(Users, _super);
     function Users() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.onDragOver = function (ev) {
+            ev.preventDefault();
+            ev.target.style.border = "2px dotted #ff8a65";
+        };
+        _this.fndragStart = function (event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        };
+        _this.onDragLeave = function (event) {
+            event.target.style.border = "";
+        };
+        _this.cancleActionBtn = function (e, id, text) {
+            e.srcElement.parentElement.innerHTML = "";
+            var node = document.createElement("DIV");
+            node.setAttribute('class', 'user-list-items');
+            node.id = id;
+            node.setAttribute('draggable', 'true');
+            node.addEventListener('dragstart', function (ev) {
+                _this.fndragStart(ev);
+            }, false);
+            var textnode = document.createTextNode(text);
+            node.appendChild(textnode);
+            document.getElementById('listSsection').prepend(node);
+        };
+        _this.onDrop = function (ev) {
+            var name = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(name));
+            var id = ev.target.querySelector('div').id;
+            var text = ev.target.querySelector('div').innerText;
+            var btn = document.createElement('button');
+            btn.setAttribute('id', 'cancelActionBtn');
+            btn.setAttribute('class', 'cancel-btn');
+            btn.innerHTML = 'X';
+            btn.addEventListener("click", function (e) { return _this.cancleActionBtn(e, id, text); });
+            ev.target.appendChild(btn);
+            ev.target.style.border = "";
+        };
+        return _this;
     }
     Users.prototype.render = function () {
+        var _this = this;
         return (React.createElement("div", { id: "user-table" },
             React.createElement("table", null,
-                React.createElement("tbody", null,
-                    React.createElement("tr", null,
-                        React.createElement("td", null),
-                        React.createElement("td", null),
-                        React.createElement("td", null),
-                        React.createElement("td", null)),
-                    React.createElement("tr", null,
-                        React.createElement("td", null),
-                        React.createElement("td", null),
-                        React.createElement("td", null),
-                        React.createElement("td", null)),
+                React.createElement("tbody", { className: "droptarget", onDragOver: function (e) { return _this.onDragOver(e); }, onDrop: function (e) { return _this.onDrop(e); }, onDragLeave: function (e) { return _this.onDragLeave(e); } },
                     React.createElement("tr", null,
                         React.createElement("td", null),
                         React.createElement("td", null),

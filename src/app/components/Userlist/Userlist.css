@@ -19,3 +19,7 @@
     color: #721c24;
     background-color: #fff3cd;
 }
+
+#listSsection {
+    max-height: 480px;
+}
