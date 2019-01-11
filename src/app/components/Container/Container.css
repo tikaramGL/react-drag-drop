@@ -1,0 +1,15 @@
+.rowC{
+    display:flex;
+    flex-direction:row;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .rowC>.userList{
+        min-width: 160px;
+    }
+
+    .rowC>.user-table{
+        max-width: 160px;
+    }
+}

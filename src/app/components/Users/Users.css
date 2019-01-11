@@ -1,0 +1,23 @@
+#user-table {
+    border: 2px solid #bdbdbd; 
+    /* flex: 3;    */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 17px 17px;
+}
+  
+td {
+    border: 2px dashed #bdbdbd;
+    min-width: 13em;
+    margin-right: 5px;
+    padding: 5px;
+    height: 50px;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    border-radius: 7px;
+}
