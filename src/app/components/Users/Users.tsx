@@ -2,7 +2,6 @@ import * as React from 'react';
 import './Users.css';
 
 interface Props {
-    passedFunction: () => void,
     userList: Array<any>
 }
 

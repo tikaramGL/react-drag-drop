@@ -46,17 +46,13 @@ export class Container extends React.Component<Props, State> {
         }
     }
   
-    passedFunction = () => {
-        
-        alert("in passedFunction");
-    }
 
     render() {
         return (<div>
             <Header />
             <div className='rowC'>
                 <Userlist userList={this.state.userList} />
-                <Users userList={this.state.userList} passedFunction={() => this.passedFunction()}/>
+                <Users userList={this.state.userList}/>
             </div>
         </div>
         )

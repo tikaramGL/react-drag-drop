@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "c5c4305e222ccc8775bf";
+/******/ 	var hotCurrentHash = "1a4410fd9bc701920bab";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1036,7 +1036,7 @@ exports.push([module.i, "header {\r\n    background-color: #ff8a65;\r\n    paddi
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".userList {\r\n    border: 2px solid #bdbdbd;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-right: 30px;\r\n    overflow-y: scroll;\r\n    min-width: 20%;\r\n}\r\n\r\n.userList > div {\r\n    border: 2px dashed #ffeeba; \r\n    margin-bottom: 5px;\r\n    padding: 5px;\r\n    border-radius: 7px;\r\n    margin-right: 7px;\r\n}\r\n\r\n.user-list-items {\r\n    color: #721c24;\r\n    background-color: #fff3cd;\r\n}\r\n\r\n#listSsection {\r\n    min-height: 380px;\r\n}", ""]);
+exports.push([module.i, ".userList {\r\n    border: 2px solid #bdbdbd;\r\n    padding: 10px;\r\n    border-radius: 5px;\r\n    margin-right: 30px;\r\n    overflow-y: scroll;\r\n    min-width: 20%;\r\n}\r\n\r\n.userList > div {\r\n    border: 2px dashed #ffeeba; \r\n    margin-bottom: 5px;\r\n    padding: 5px;\r\n    border-radius: 7px;\r\n    margin-right: 7px;\r\n}\r\n\r\n.user-list-items {\r\n    color: #721c24;\r\n    background-color: #fff3cd;\r\n}\r\n\r\n#listSsection {\r\n    max-height: 480px;\r\n}", ""]);
 
 
 
@@ -26836,6 +26836,16 @@ var Users = (function (_super) {
         return (React.createElement("div", { id: "user-table" },
             React.createElement("table", null,
                 React.createElement("tbody", { className: "droptarget", onDragOver: function (e) { return _this.onDragOver(e); }, onDrop: function (e) { return _this.onDrop(e); }, onDragLeave: function (e) { return _this.onDragLeave(e); } },
+                    React.createElement("tr", null,
+                        React.createElement("td", null),
+                        React.createElement("td", null),
+                        React.createElement("td", null),
+                        React.createElement("td", null)),
+                    React.createElement("tr", null,
+                        React.createElement("td", null),
+                        React.createElement("td", null),
+                        React.createElement("td", null),
+                        React.createElement("td", null)),
                     React.createElement("tr", null,
                         React.createElement("td", null),
                         React.createElement("td", null),
